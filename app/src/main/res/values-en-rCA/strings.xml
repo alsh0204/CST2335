@@ -3,4 +3,11 @@
     <string name="app_name">Lab1</string>
     <string name="hello_message">Hello World</string>
     <string name="ButtonText">I\'m a button</string>
+    <string name="Login">Login</string>
+    <string name="password">password</string>
+    <string name="LoginName">Login</string>
+    <string name="pass">password</string>
+    <string name="radio">radio button</string>
+    <string name="check">check box</string>
+    <string name="switch2">switch</string>
 </resources>

@@ -3,4 +3,12 @@
     <string name="app_name">Lab1</string>
     <string name="hello_message">مرحبا</string>
     <string name="ButtonText">I\'m a button</string>
+    <string name="Login">دخول</string>
+    <string name="password">كلمة المرور</string>
+    <string name="LoginName">اسم المستخدم</string>
+    <string name="pass">مرور</string>
+    <string name="radio">زر الراديو</string>
+    <string name="check">الحالة</string>
+    <string name="switch2">تبديل</string>
+
 </resources>
