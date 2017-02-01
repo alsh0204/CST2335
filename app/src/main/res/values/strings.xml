@@ -8,4 +8,8 @@
     <string name="RadioLabel">Radio Button</string>
     <string name="CheckBoxLabel">Check Box</string>
     <string name="SwitchLabel">Enable Something</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="dialog_message">This is an alert dialog</string>
+    <string name="dialog_title">Title of Alert Dialog</string>
 </resources>

@@ -9,4 +9,8 @@
     <string name="RadioLabel">اختيار</string>
     <string name="CheckBoxLabel">اختيار</string>
     <string name="SwitchLabel">افتح</string>
+    <string name="ok">اوكي</string>
+    <string name="cancel">كانسل</string>
+    <string name="dialog_message">رسالة</string>
+    <string name="dialog_title">عنوان</string>
 </resources>
