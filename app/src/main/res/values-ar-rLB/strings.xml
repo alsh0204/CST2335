@@ -3,4 +3,10 @@
     <string name="app_name">لاب اندرويد</string>
     <string name="hello_message">البداية</string>
     <string name="ButtonText">اضغط هنا</string>
+    <string name="title_activity_login">دخول</string>
+    <string name="LoginText">ادخل</string>
+    <string name="PasswordText">كلمة السر</string>
+    <string name="RadioLabel">اختيار</string>
+    <string name="CheckBoxLabel">اختيار</string>
+    <string name="SwitchLabel">افتح</string>
 </resources>
