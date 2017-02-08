@@ -12,4 +12,6 @@
     <string name="cancel">CANCEL</string>
     <string name="dialog_message">This is an alert dialog</string>
     <string name="dialog_title">Title of Alert Dialog</string>
+    <string name="startChatText">Start Chat</string>
+    <string name="sendButtonText">Send</string>
 </resources>

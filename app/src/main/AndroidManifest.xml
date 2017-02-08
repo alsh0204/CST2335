@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartActivity"></activity>
+        <activity android:name=".StartActivity" />
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login"
@@ -19,11 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListItemsActivity"></activity>
+        <activity android:name=".ListItemsActivity" />
 
         <uses-permission android:name="android.permission.CAMERA" />
+
         <uses-feature android:name="android.hardware.camera" />
         <uses-feature android:name="android.hardware.camera.autofocus" />
+
+        <activity android:name=".ChatWindow"></activity>
     </application>
 
 </manifest>

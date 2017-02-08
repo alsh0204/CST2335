@@ -12,5 +12,6 @@
     <string name="ok">اوكي</string>
     <string name="cancel">كانسل</string>
     <string name="dialog_message">رسالة</string>
-    <string name="dialog_title">عنوان</string>
+    <string name="startChatText">ابدا</string>
+    <string name="sendButtonText">ابعت</string>
 </resources>
