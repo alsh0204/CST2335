@@ -10,5 +10,6 @@
     <string name="radio">زر الراديو</string>
     <string name="check">الحالة</string>
     <string name="switch2">تبديل</string>
-
+    <string name="startChatText">"بدء المحادثة"</string>
+    <string name="sendButtonText">"أرسل"</string>
 </resources>

@@ -10,4 +10,7 @@
     <string name="radio">radio button</string>
     <string name="check">check box</string>
     <string name="switch2">switch</string>
+    <string name="startChatText">"Start Chat"</string>
+    <string name="sendButtonText">"Send"</string>
+
 </resources>

@@ -10,5 +10,10 @@
     <string name="radio">radio button</string>
     <string name="check">check box</string>
     <string name="switch2">switch</string>
-
+    <string name="finishActivityMessage">"finish"</string>
+    <string name="finishActivityTitle">"finish title"</string>
+    <string name="ok">"ok"</string>
+    <string name="cancel">"cancel"</string>
+    <string name="startChatText">"Start Chat"</string>
+    <string name="sendButtonText">"Send"</string>
 </resources>
