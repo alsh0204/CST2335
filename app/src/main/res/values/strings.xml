@@ -14,4 +14,8 @@
     <string name="dialog_title">Title of Alert Dialog</string>
     <string name="startChatText">Start Chat</string>
     <string name="sendButtonText">Send</string>
+    <string name="startWeatherForecast">Start Weather Forecast</string>
+    <string name="currentTempText">Current Temperature</string>
+    <string name="minTempText">Minimum Temperature</string>
+    <string name="maxTempText">Maximum Temperature</string>
 </resources>

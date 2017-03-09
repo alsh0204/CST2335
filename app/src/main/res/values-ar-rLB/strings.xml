@@ -14,4 +14,8 @@
     <string name="dialog_message">رسالة</string>
     <string name="startChatText">ابدا</string>
     <string name="sendButtonText">ابعت</string>
+    <string name="startWeatherForecast">الجو</string>
+    <string name="currentTempText">الجو الحالي</string>
+    <string name="minTempText">الدرجةالادنى</string>
+    <string name="maxTempText">الدرجة الاعلى</string>
 </resources>
