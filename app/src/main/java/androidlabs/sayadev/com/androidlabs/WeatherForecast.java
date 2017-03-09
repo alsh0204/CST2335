@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -23,8 +22,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
-
-import java.net.MalformedURLException;
 import java.net.URL;
 
 
@@ -69,7 +66,7 @@ public class WeatherForecast extends AppCompatActivity {
 
         private static final String OttawaWeatherURL = "http://api.openweathermap.org/data/2.5/weather?q=ottawa,ca&APPID=d99666875e0e51521f0040a3d97d0f6a&mode=xml&units=metric";
 
-        public boolean fileExists(String fileName){
+        private boolean fileExists(String fileName){
             File file = getBaseContext().getFileStreamPath(fileName);
             return file.exists();
         }
@@ -80,9 +77,13 @@ public class WeatherForecast extends AppCompatActivity {
 
             weatherStatus.setImageBitmap(weatherImage);
 
-            currentTempText.setText(currentTemp + " \u2103");
-            minTempText.setText(minTemp + " \u2103");
-            maxTempText.setText(maxTemp + " \u2103");
+            String cText = currentTemp + "\u2103";
+            String minText = minTemp + "\u2103";
+            String maxText = maxTemp + "\u2103";
+
+            currentTempText.setText(cText);
+            minTempText.setText(minText);
+            maxTempText.setText(maxText);
 
             weatherProgress.setVisibility(View.INVISIBLE);
         }
@@ -93,7 +94,7 @@ public class WeatherForecast extends AppCompatActivity {
             weatherProgress.setVisibility(View.VISIBLE);
             weatherProgress.setProgress(values[0]);
 
-            FileInputStream fis = null;
+            FileInputStream fis;
             Log.i("Info", iconFileName);
             if(fileExists(iconFileName)) {
                 Log.i("Info", iconFileName + " was found");
@@ -110,13 +111,13 @@ public class WeatherForecast extends AppCompatActivity {
 
         @Override
         protected String doInBackground(String... params) {
-            URL url = null;
+            URL url;
             XmlPullParser parser;
             int progress = 0;
 
             try {
                 url = new URL(OttawaWeatherURL);
-                HttpURLConnection conn = null;
+                HttpURLConnection conn;
                 conn = (HttpURLConnection) url.openConnection();
                 conn.setReadTimeout(10000 /* milliseconds */);
                 conn.setConnectTimeout(15000 /* milliseconds */);
@@ -147,9 +148,7 @@ public class WeatherForecast extends AppCompatActivity {
                     publishProgress(progress);
                 }
 
-            } catch (XmlPullParserException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
+            } catch (XmlPullParserException | IOException e) {
                 e.printStackTrace();
             }
 
@@ -159,16 +158,15 @@ public class WeatherForecast extends AppCompatActivity {
             iconFileName = "image" + iconName + ".PNG";
 
             Bitmap image = HTTPUtils.getImage(imageUrl);
-            FileOutputStream outputStream = null;
+            FileOutputStream outputStream;
             try {
                 outputStream = openFileOutput( iconFileName, Context.MODE_PRIVATE);
-                image.compress(Bitmap.CompressFormat.PNG, 80, outputStream);
+                if(image != null)
+                    image.compress(Bitmap.CompressFormat.PNG, 80, outputStream);
 
                 outputStream.flush();
                 outputStream.close();
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
+            } catch (NullPointerException | IOException e) {
                 e.printStackTrace();
             }
 
