@@ -176,6 +176,7 @@ public class ChatWindow extends AppCompatActivity {
             return chatArray.size();
         }
 
+        public long getItemId(int position) { return chatArray.get(position).get_id();}
         public ChatData getItem(int position) {
             return chatArray.get(position);
         }
