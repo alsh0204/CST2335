@@ -158,6 +158,7 @@ public class WeatherForecast extends AppCompatActivity {
             iconFileName = "image" + iconName + ".PNG";
 
             Bitmap image = HTTPUtils.getImage(imageUrl);
+            weatherImage = image;
             FileOutputStream outputStream;
             try {
                 outputStream = openFileOutput( iconFileName, Context.MODE_PRIVATE);
