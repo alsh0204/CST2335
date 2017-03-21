@@ -6,7 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 /**
- * Created by saleh on 2/15/2017.
+ * Created by rudwan on 2/15/2017.
  */
 
 public class ChatDatabaseHelper extends SQLiteOpenHelper {

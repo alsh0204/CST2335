@@ -8,7 +8,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * Created by saleh on 3/8/2017.
+ * Created by rudwan on 3/8/2017.
  */
 
 class HTTPUtils {

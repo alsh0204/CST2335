@@ -1,7 +1,7 @@
 package androidlabs.sayadev.com.androidlabs;
 
 /**
- * Created by saleh on 3/16/2017.
+ * Created by rudwan on 3/16/2017.
  */
 
 public class ChatData {
