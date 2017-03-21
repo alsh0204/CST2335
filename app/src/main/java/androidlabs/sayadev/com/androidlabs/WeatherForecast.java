@@ -25,7 +25,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-
+/* by rudwan */
 public class WeatherForecast extends AppCompatActivity {
 
     private ForecastQuery forecast;
