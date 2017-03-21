@@ -23,4 +23,8 @@
     <string name="deleteThisMessage">DELETE THIS MESSAGE</string>
     <string name="title_activity_test_toolbar">TestToolbar</string>
     <string name="start_toolbar">Start Toolbar Activity</string>
+    <string name="dialogTitle">Do you want to go back?</string>
+    <string name="dialogPositiveButton">Yes</string>
+    <string name="diaglogNegativeButton">No</string>
+    <string name="dialogMessage">Type a message</string>
 </resources>
