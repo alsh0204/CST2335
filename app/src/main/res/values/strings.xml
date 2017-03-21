@@ -21,4 +21,6 @@
     <string name="messageHere">MessageHere</string>
     <string name="idHere">ID=</string>
     <string name="deleteThisMessage">DELETE THIS MESSAGE</string>
+    <string name="title_activity_test_toolbar">TestToolbar</string>
+    <string name="start_toolbar">Start Toolbar Activity</string>
 </resources>

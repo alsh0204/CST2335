@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -42,6 +43,16 @@ public class StartActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Log.i(ACTIVITY_NAME, "User clicked Start Weather Chat");
                 Intent intent = new Intent(StartActivity.this, WeatherForecast.class);
+                startActivity(intent);
+            }
+        });
+
+        Button buttonToolBae = (Button) findViewById(R.id.startToolBar);
+        buttonToolBae.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(ACTIVITY_NAME, "User clicked ToolBar");
+                Intent intent = new Intent(StartActivity.this, TestToolbar.class);
                 startActivity(intent);
             }
         });
