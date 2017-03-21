@@ -34,7 +34,7 @@ public class TestToolbar extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Hello, I am Lab 8", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Hi, I am Rudwan", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
@@ -60,12 +60,7 @@ public class TestToolbar extends AppCompatActivity {
         });
         builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
-                Context context = getApplicationContext();
-                CharSequence text = "You clicked the cancel button";
-                int duration = Toast.LENGTH_SHORT;
 
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
             }
         });
         // Create the AlertDialog
@@ -94,7 +89,7 @@ public class TestToolbar extends AppCompatActivity {
                 })
                 .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        textMessage = "You selected item 1";
+
                     }
                 });
         return builder.create();
@@ -117,7 +112,7 @@ public class TestToolbar extends AppCompatActivity {
                 return true;
             case R.id.action_about:
                 Context context = getApplicationContext();
-                CharSequence text = "Version 1.0, by Saleh Yassin";
+                CharSequence text = "Version 1.0, by Rudwan Al Shama`a";
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(context, text, duration);
